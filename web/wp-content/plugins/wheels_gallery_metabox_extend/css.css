@@ -1,0 +1,107 @@
+.filelist {
+    width: 60%;
+}
+.filelist .file {
+    padding: 5px;
+    background: #ececec;
+    border: solid 1px #ccc;
+    margin-bottom: 4px;
+}
+.filelist .fileprogress {
+    width: 0;
+    background: #B7C53D;
+    height: 5px;
+}
+.plupload-thumbs {
+ 
+}
+.plupload-thumbs .thumb {
+    width: 50px;
+    padding-right: 5px;
+    float: left;
+}
+.plupload-thumbs .thumb img {
+    width: 50px;
+    height: 50px;
+}
+.ui-sortable  .thumb img {
+    cursor: pointer;
+}
+
+.table-3 {
+    border: 1px solid #DFDFDF;
+    background-color: #F9F9F9;
+    width: 100%;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-family: Arial,"Bitstream Vera Sans",Helvetica,Verdana,sans-serif;
+    color: #333;
+}
+.table-3 td, .table-3 th {
+    border-top-color: white;
+    border-bottom: 1px solid #DFDFDF;
+    color: #555;
+}
+.table-3 th {
+    text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;
+    font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+    font-weight: normal;
+    padding: 7px 7px 8px;
+    text-align: left;
+    line-height: 1.3em;
+    font-size: 14px;
+}
+.table-3 td {
+    font-size: 12px;
+    padding: 4px 7px 2px;
+    vertical-align: top;
+}
+.table-3 label{
+    display: block;
+    float: left;
+    margin-bottom: 0;
+    width: 80px;
+}
+.table-3 input[type=text]{
+    margin-bottom: 4px;
+    width: 350px;
+}
+
+a.tab{
+    background-color: #F9F9F9;
+    border-radius: 5px 5px 0 0;
+    display: block;
+    float: left;
+    margin: 2px 10px 0px 5px;
+    padding: 5px 15px;
+    width: 50px;
+    text-align: center;
+}
+
+a.tab:hover{
+    background-color: #DFDFDF;
+}
+
+a.active{
+    background-color: #DFDFDF;
+    border-radius: 5px 5px 0 0;
+    display: block;
+    float: left;
+    margin: 2px 10px 0px 5px;
+    padding: 5px 15px;
+    width: 50px;
+    text-align: center;
+}
+.first_elm{
+    margin-left: 25px !important;
+}
+#list-form{
+    margin-top: 0px !important;
+}
+.button-primary-modified{
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin: 5px;
+}

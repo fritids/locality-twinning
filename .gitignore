@@ -1,0 +1,10 @@
+Icon?
+.DS_Store
+nbproject
+Thumbs.db
+*.bak
+.idea
+wp-config.php
+config.php
+web/wp-content/uploads/*
+web/wp-content/Cimy_User_Extra_Fields

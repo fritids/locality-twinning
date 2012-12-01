@@ -1,0 +1,49 @@
+#grid-feed-panel{
+    width: 290px;
+    height: 713px;
+}
+#grid-feed-panel #panel-left{
+    float: left;
+    width: 34px;
+    height: 713px;
+    background-image: url("feed-panel-img/handler.png");
+}
+#grid-feed-panel #panel-right{
+    float: right;
+    width: 256px;
+    height: 713px;
+}
+#grid-feed-panel #panel-right #feed-container{
+    width: 256px;
+    background-image: url("feed-panel-img/feed-container.png");
+    height: 494px;
+    position: relative;
+}
+#grid-feed-panel #panel-right #feed-container #feeds{
+    width: 240px;
+    height: 394px;
+    position: absolute;
+    top: 43px;
+}
+#grid-feed-panel #panel-right #feed-container #feeds .feed{
+    width: 240px;
+    height: 75px;
+    margin-bottom: 8px;
+}
+#grid-feed-panel #panel-right #feed-container #feeds .feed .color{
+    width: 9px;
+    height: 100%;
+    background-color: red;
+    float: left;
+}
+#grid-feed-panel #panel-right #feed-container #feeds .feed .article{
+    width: 230px;
+    height: 100%;
+    background-color: #adff2f;
+    float: right;
+}
+#grid-feed-panel #panel-right #sign-up{
+    width: 256px;
+    background-image: url("feed-panel-img/signup.png");
+    height: 219px;
+}

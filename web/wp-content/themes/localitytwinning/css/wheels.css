@@ -1,0 +1,458 @@
+body.vehicles-reviews ul.opinions-list li {
+    min-width: 200px;
+}
+
+div.vehicle-navigation div.tabs div.tab div.viewport {
+    min-height: 160px;
+}
+
+#comments .comment-form-comment label {
+    display: none;
+}
+
+.recaptcha-error {
+    font-size: 14px;
+    color: #f00;
+}
+
+#commentform p label {
+    width: 50px;
+    display: block;
+    float: left;
+}
+
+#commentform p .required {
+    margin: 0px 5px;
+}
+
+div.opinions-reviews div.opinions div.opinion a.sponsor:after, div.special div.electric-cars div.section-head a.sponsor:after  {
+    background-image: none;
+    width: 0;
+}
+.second-op img{
+    display: inline;
+}
+
+#commentform #url{
+    margin-left: 12px;
+}
+
+.special .attachment-thumbnail, #guide-article .carousel-inner .item .attachment-thumbnail{
+    width: 120px;
+    height: 68px;
+    background-color: #ccc;
+}
+#home .guides .slide img.attachment-thumbnail, #home .features .slide img.attachment-thumbnail, #home .reviews .slide img.attachment-thumbnail, #news-features .features img.attachment-thumbnail{
+    width: 204px;
+    height: 115px;
+    background-color: #ccc;
+}
+#alternative-container{
+    border-top: 1px solid #D7D7D7;
+}
+.main-menu-window .features img.attachment-thumbnail{
+    width: 132px;
+    height: 74px;
+    background-color: #ccc;
+}
+#main-header .logo-bar .mywheels{
+    width: 678px;
+}
+#main-header .logo-bar .mywheels ul{
+    margin: 14px 0 0 0;
+}
+img[class*='wp-image-']{
+    padding: 5px;
+    border: #ccc solid 1px;
+    margin-right: 10px;
+}
+div.aligncenter{
+    text-align: center;
+}
+#used-car-instead-answer-center.answer-centre h3{
+    margin-bottom: 0px;
+}
+#used-car-instead-answer-center.answer-centre .metroland{
+    padding-bottom: 13px;
+}
+#vehicles-reviews .used-vehicles, #review .row.used .used-vehicles{
+    /*width: 840px;*/
+}
+#vehicles-reviews .used-vehicles ul.listing li, #review .row.used .used-vehicles ul.listing li{
+    width: 268px;
+}
+#vehicles-reviews .used-vehicles ul.listing li.even, #review .row.used .used-vehicles ul.listing li.even{
+    margin: 0 12px 10px 0;
+}
+#vehicles-reviews .used-vehicles ul.listing li .wrap a img, #vehicles .used-vehicles ul.listing li .wrap a img, #review .row.used .used-vehicles ul.listing li .wrap a img{
+    width: 92px;
+}
+div.used-listings ul.listing li.vehicle img, #vehicle-profile li.vehicle img{
+    width: 92px;
+    height: 68px;
+}
+#news .in-this-section ul li a img, #features .in-this-section ul li a img{
+    width: 60px;
+    height: 34px;
+}
+#bg-navprimary-menu-4{
+    z-index: 10005;
+}
+#vehicle-finder .results .result-item .img-col img{
+    width: 184px;
+}
+.menu.compare .formbtn{
+    margin-left: 10px;
+}
+#main-header .toolbar div.tabs #research-vehicles .search-container {
+    margin-left: -10px;
+}
+#topads{
+    margin: 0 5px 43px;
+}
+/*next added by rakibul*/
+div#modal-screens div#registration.modal div.content div.registration-form form span.status {display:none;}
+div#modal-screens div#registration.modal div.content div.registration-form form span.error {color:red;display: block;float: left;font-weight: bold;height: 24px;margin-left: 24px;padding-left: 20px;}
+div#modal-screens div#registration.modal div.content div.registration-form form span.pass2 {color:red;display: block;float: right;font-weight: bold;height: 24px;margin-right: 35px;padding-left: 20px;}
+div#modal-screens div#login-signup.modal div.content div.member-signin div.email-signin span.status {display:none;}
+div#modal-screens div#login-signup.modal div.content div.member-signin div.email-signin span.error {color:red;display: block;clear: both;}
+.menu.compare .compare-conatiner .compare-item img.ajax-loader{left: 44px;top: 15px;position: absolute;}
+#galert #galert-title{text-align: center;}
+#galert #galert-body{text-align: center;}
+#clear-compare-line{background:none;}
+#modal-screens #registration .registration-form  #reg-submit-loading{position: absolute;bottom: 7px;right: 407px}
+.compare-container .compare-filters .suggestions-container ul li .pos {position: relative;width: 133px;}
+.compare2 #suggestion-list li:after, .compare1 #suggestion-list li:after {clear: both;width: 133px;}
+#modal-screens #registration .registration-form #step2-clear{clear: both;}
+.compare-container .compare-filters .suggestions-container #suggestion-list-panel ul li a.suggestion-image img{width:132px;}
+.compare-container table.compare-table .image-row .pos .compare-image a img{width:212px}
+.find-dealer .form-container #search-location{margin-left: 3px !important;}
+#popup-find-dealer .content{width: 680px !important;}
+#popup-find-dealer .content #find-dealer-frame{border-bottom:none;border-top: none;border-left: none; overflow:hidden;overflow-y:hidden;margin: 0 0;padding: 0 0;}
+#find-a-dealer-full{width: 685px !important;height: 470px}
+#find-a-dealer-full h3{margin: 0 0 17px !important;overflow: hidden;}
+.find-dealer .form-container .make-container{width: 153px;}
+.find-dealer .form-container #hdn-submit{display: none;}
+#find-a-dealer-full #map_canvas .ajax-loader1{position: absolute;top: 240px;left: 286px;width: 100px;height: 100px}
+.find-dealer .ajax-loader2{margin-left:120px;margin-top:70px}
+
+/* Rating style */
+.rating.large .value.rating-0-0{
+    background-position: 0px 0px;
+}
+
+.rating.large .value.rating-0-5{
+    background-position: -84px 0px;
+}
+
+.rating.large .value.rating-1-0 {
+    background-position: -166px 0px;
+}
+
+.rating.large .value.rating-1-5 {
+    background-position: -249px 0px;
+}
+
+.rating.large .value.rating-2-0 {
+    background-position: -330px 0px;
+}
+
+.rating.large .value.rating-2-5 {
+    background-position: -414px 0px;
+}
+
+.rating.large .value.rating-3-0 {
+    background-position: -496px 0px;
+}
+
+.rating.large .value.rating-3-5 {
+    background-position: -579px 0px;
+}
+
+.rating.large .value.rating-4-0 {
+    background-position: -662px 0px;
+}
+
+.rating.large .value.rating-4-5 {
+    background-position: -746px 0px;
+}
+
+.rating.large .value.rating-5-0 {
+    background-position: -828px 0px;
+}
+
+.rating.small .value.rating-0-0{
+    background-position: 0px 0px;
+}
+.rating.small .value.rating-0-5{
+    background-position: -62px 0px;
+}
+.rating.small .value.rating-1-0{
+    background-position: -125px 0px;
+}
+.rating.small .value.rating-1-5{
+    background-position: -187px 0;
+}
+.rating.small .value.rating-2-0{
+    background-position: -249px 0;
+}
+.rating.small .value.rating-2-5{
+    background-position: -311px 0;
+}
+.rating.small .value.rating-3-0{
+    background-position: -373px 0;
+}
+.rating.small .value.rating-3-5{
+    background-position: -435px 0;
+}
+.rating.small .value.rating-4-0{
+    background-position: -496px 0;
+}
+.rating.small .value.rating-4-5{
+    background-position: -558px 0;
+}
+.rating.small .value.rating-5-0{
+    background-position: -620px 0;
+}
+.vehicle-navigation{
+    min-height: 250px;
+}
+
+#news-features .feature-container.tl img {
+    width: 432px;
+    height: 240px;
+}
+#news-features .feature-container.tm img, #news-features .feature-container.tr img {
+    width: 208px;
+    height: 240px;
+}
+
+.menu.compare .compare-conatiner .compare-item img {
+    height: 76px !important;
+    width: 139px !important;
+}
+.menu.compare .compare-conatiner .compare-item img.ajax-loader {
+    height: 48px !important;
+    width: 48px !important;
+}
+.vehicle-profile.home-module .container .slide img{
+    height: 153px;
+    width: 204px;
+}
+#main-header .toolbar div.tabs #research-vehicles #price-slider .label{
+    width:40px;
+}
+.recaptcha-error{
+    font-size: 16px !important;
+}
+#vehicle-profile div.social:after{
+    margin-bottom: 20px;
+}
+
+.events-calender{
+    position: relative;
+}
+
+#guides .answer-centre .ask-question .question-type-container .ui-button, .home .answer-centre .ask-question .question-type-container .ui-button {
+    top: 0;
+    outline: none;
+    width: 152px !important;
+}
+#ask-question-message{
+    z-index: 100;
+}
+#guides .comments .commentform .tip{
+    margin-left: 5px;
+}
+#guides .comments .commentlist li.answer{
+    margin-top: 2px;
+}
+#guides .answer-centre .sponsor-badge{
+    width: 150px;
+    top: -12px;
+}
+#events .feature-container .comment-count{
+    background: url("../img/review-count-smaller.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: "ProximaNovaCondensed",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 28px;
+    line-height: 24px;
+    position: absolute;
+    right: 4px;
+    text-align: center;
+    top: 4px;
+    width: 41px;
+}
+#events .events-calender img.attachment-thumbnail{
+    width: 132px;
+    height: 74px;
+}
+#home .event-list .event img.attachment-thumbnail, .featured-events .event-list .event img.attachment-thumbnail{
+    width: 156px;
+    height: 89px;
+}
+
+#home .answer-centre{
+    overflow: visible;
+}
+/*next added by rakibul for answer-center popup on homepage*/
+.home #ask-question-message{
+    z-index:999;
+    display: none;
+}
+
+.home .answer-centre .ask-question {
+    background-color: #D7D7D7;
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+.home .answer-centre .ask-question a.close {
+    background: url("../img/close-button-orange-trans.png") no-repeat scroll 0 0 transparent;
+}
+
+.home .answer-centre .ask-question .pos {
+    padding: 22px 16px;
+}
+
+.home .answer-centre .ask-question h5 {
+    font-family: "ProximaNovaCondensed",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    margin: 0;
+}
+
+.home .answer-centre .ask-question p, .home .answer-centre .ask-question textarea {
+    font-family: "ProximaNovaCondensed",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+}
+
+.home .answer-centre .ask-question .question-type-container {
+    position: relative;
+}
+
+.home .answer-centre .ask-question ol li {
+    margin-bottom: 12px;
+}
+
+.home .answer-centre .ask-question textarea.full {
+    width: 94% !important;
+}
+
+.home .answer-centre .ask-question textarea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #A2A2A2;
+    padding: 12px;
+}
+
+.home .answer-centre .ask-question p, .home .answer-centre .ask-question textarea {
+    font-family: "ProximaNovaCondensed",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+}
+
+.home .answer-centre .ask-question ol li label {
+    display: none;
+}
+
+ul#suggestion-list li {
+    height: 160px;
+}
+
+#vehicles-reviews .special-offers .offers, #reviews .special-offers .offers, #vehicles .special-offers .offers {
+    width: 100%;
+}
+#vehicles-reviews .special-offers ul li, #reviews .special-offers ul li, #vehicles .special-offers ul li{
+    float: left;
+    width: 50%;
+}
+
+/*  */
+#special-offer-lightbox-body{
+    height: 250px;
+    overflow: auto;
+    width: 600px;
+}
+#special-offer-lightbox-body .offers ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#special-offer-lightbox-body .offers ul li {
+    float: left;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+#special-offer-lightbox-body .offers ul li img {
+    float: left;
+    margin-right: 10px;
+}
+
+#special-offer-lightbox-body .offers ul li p {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 0 0 84px;
+}
+#more-special-offer{
+    display: none;
+    font-weight: bold;
+}
+#vehicle-profile div.find-a-dealer{
+    left:503px !important;
+}
+
+.results-bar .results-count .summary span{
+    color: #37B54A;
+    font-weight: bold;;
+}
+
+.special-offer-details{
+    display: none;
+    position: relative;
+    padding-bottom: 22px;
+}
+.special-offer-hide-details{
+    position: absolute;
+    bottom: 0px;
+    color: #E85C03 !important;
+}
+.special-offer-more-link{
+    color: #E85C03 !important;
+}
+.special-offer-interest-rate-container{
+    margin-left: 20px;
+}
+
+div.offers ul li div.pos p{
+    min-height: 36px;
+}
+
+.home-view-answer{
+    position:absolute;
+    right:20px;
+    bottom:10px;
+    color: #E85C03;
+    font-size: 18px;
+}
+
+#mediaSwitcher{
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#mediaSwitcher2, #mediaSwitcher3{
+    display: none;
+}

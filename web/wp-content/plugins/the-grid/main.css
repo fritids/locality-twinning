@@ -1,0 +1,59 @@
+
+#feed-container {
+height:50%;
+left:5%;
+overflow:auto;
+position:absolute;
+top:5%;
+}
+
+.ssb_down {
+background:transparent url(../../plugins/the-grid/feed-panel-img/icon-arrow-down.png);
+bottom:0;
+cursor:pointer;
+position:absolute;
+right:0;
+}
+
+.ssb_sb {
+/*background:transparent url(../images/middle.png);*/
+/*background: url("../../plugins/the-grid/feed-panel-img/bg-scrollbar-thumb-y.png") no-repeat scroll 0 100% transparent;*/
+background: url("../../plugins/the-grid/feed-panel-img/middle.png");
+cursor:pointer;
+position:absolute;
+right:0;
+}
+
+.ssb_sb_down {
+background:transparent url(../../plugins/the-grid/feed-panel-img/middrag.png);
+}
+
+.ssb_sb_over {
+background:transparent url(../../plugins/the-grid/feed-panel-img/midhover.png);
+}
+
+.ssb_st {
+/*background:transparent url(../images/back.png);*/
+/*background: url("../../plugins/the-grid/feed-panel-img/bg-scrollbar-trackend-y.png") no-repeat scroll 0 100% transparent;*/
+background: url("../../plugins/the-grid/feed-panel-img/back.png");
+cursor:pointer;
+height:100%;
+position:absolute;
+right:0;
+top:0;
+}
+
+.ssb_up {
+background:transparent url(../images/icon-arrow-up.png);
+cursor:pointer;
+position:absolute;
+right:0;
+top:0;
+}
+
+.parent {
+font-family:verdana;
+height:100%;
+padding:10px;
+position:relative;
+}

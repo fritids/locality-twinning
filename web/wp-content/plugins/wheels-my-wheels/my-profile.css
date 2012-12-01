@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+div#modal11-screens div#profile.modal11 div.content {
+    padding: 18px;
+}
+
+div#modal11-screens div.modal11 div.content {
+    padding: 18px 0;
+    width: 681px;
+}
+.modal11 div.content {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.7);
+    font: 14px/18px 'ProximaNovaCondensed',Helvetica,Arial,sans-serif;
+    min-width: 347px;
+    padding: 18px !important;
+    position: absolute;
+    z-index: 9001;
+}
+div#modal11-screens div#profile.modal11 h3 {
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0 0 10px;
+}
+div#modal11-screens div#profile.modal11 div.content div.avatar-selection {
+    float: left;
+    margin-right: 40px;
+    overflow: hidden;
+    width: 123px;
+}
+div#modal11-screens div#profile.modal11 div.content div.avatar-selection img.current-avatar {
+    height: 123px;
+    width: 123px;
+}
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+div#modal1-screens div#profile.modal1 div.content div.avatar-selection a.upload {
+    color: #E85C03;
+    display: block;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 10px 0 30px;
+    text-decoration: none;
+}
+div#modal1-screens div#profile.modal1 div.content div.avatar-selection div.generic-options {
+    width: 130px;
+}
+
+div#modal1-screens div#profile.modal1 div.content div.avatar-selection div.generic-options img.option {
+    float: left;
+    height: 37px;
+    margin: 0 6px 6px 0;
+    width: 37px;
+}
+
+
+div#modal1-screens div#profile.modal1 div.content div.profile-form {
+    float: left;
+    margin-top: -6px;
+    width: 478px;
+}
+div#modal1-screens div#profile.modal1 div.content div.profile-form form label {
+    clear: both;
+    margin-bottom: 9px;
+}
+.modal1 div.content label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 11px;
+}
+label {
+    cursor: pointer;
+}
+div#modal1-screens div#profile.modal1 div.content div.profile-form form input[type="text"], div#modal1-screens div#profile.modal1 div.content div.profile-form form input[type="email"], div#modal1-screens div#profile.modal1 div.content div.profile-form form input[type="password"] {
+    float: left;
+    font-weight: bold;
+    margin-bottom: 15px;
+    width: 225px;
+}
+div#modal1-screens div#profile.modal1 div.content div.profile-form form span.error {
+    color: red;
+    display: block;
+    float: left;
+    font-weight: bold;
+    height: 24px;
+    margin-left: 24px;
+    padding-left: 20px;
+}
+div#modal1-screens div#profile.modal1 div.content div.profile-form form span.status {
+    display: none;
+}
+div#modal1-screens div#profile.modal1 div.content div.profile-form form fieldset.password {
+    padding-bottom: 12px;
+}
+div#modal1-screens div#profile.modal1 div.content div.profile-form form fieldset.password .pass1 {
+    margin-right: 24px;
+}
+div#modal1-screens div#profile.modal1 div.content div.profile-form form fieldset.password label {
+    clear: none;
+    float: left;
+    width: 227px;
+}
+div#modal1-screens div#profile.modal1 div.content div.profile-form form label {
+    clear: both;
+    margin-bottom: 9px;
+}
+.modal1 div.content label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 11px;
+}
+label {
+    cursor: pointer;
+}
+.modal1 div.content a.close {
+    /*background: url("../img/close-button-modal1.png") no-repeat scroll 0 0 transparent;*/
+    display: block;
+    height: 24px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-indent: -9999px;
+    top: 0;
+    width: 24px;
+}
+div#profile.modal1 div.content div.profile-form form span.error {
+    color: red;
+}
+div#container div#main div.content .err-msg-ttl {
+    color: red;
+    margin: 8px 0;
+    font-weight: bold;
+}
+div#container div#main div.content .scs-msg-ttl {
+    color: #37B54A;
+    margin: 8px 0;
+    font-weight: bold;
+}
+div#profile.modal1 #profile-form label {
+    margin-bottom: 9px;
+    cursor: auto;
+}
+div#profile.modal1 #profile-form input {
+    margin-bottom: 15px;
+}
+
