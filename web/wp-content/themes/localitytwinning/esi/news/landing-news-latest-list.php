@@ -9,7 +9,7 @@ $postModel = new \Emicro\Model\Post($wpdb);
 $latestNews  = $postModel->getAll(array('post_type' => 'news', 'limit' => 10, 'start' => 9));
 ?>
 <div class="latest-news">
-    <h3>Latest News</h3>
+    <h3></h3>
     <div class="col">
 
         <div class="pos">

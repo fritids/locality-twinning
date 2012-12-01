@@ -1,94 +1,71 @@
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php'; ?>
-<!-- begin .carousel-->
-<div id="guideCarousel" data-controller="CarouselController" class="carousel slide">
-    <div class="carousel-inner">
+<?php
 
-        <?php
-        global $wpdb;
+require $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php';
 
-        $args['type'] = 'latest';
-        $args['post_type'] = 'guides';
-        $args['limit'] = 3;
+global $wpdb;
 
-        $postModel = new \Emicro\Model\Post($wpdb);
-        $latestGuides = $postModel->getAll($args);
+$postModel = new \Emicro\Model\Post($wpdb);
 
-        $loop = 1;
-        if(!empty($latestGuides)):
-            foreach($latestGuides as $post):
-                setup_postdata($post)
-                ?>
+$latestNews  = $postModel->getAll(array('post_type' => 'guides', 'limit' => 9, 'custom_field' => true));
 
-                <div class="item <?php if($loop == 1) echo 'active' ?>">
-                    <div class="feature-container"><?php the_post_thumbnail('driving-guide-medium')?>
-                        <div class="copy">
-                            <div class="pos"><a href="<?php the_permalink()?>">
-                                <p><?php the_author()?></p>
-                                <h4><?php the_title()?> &raquo;</h4>
-                            </a></div>
-                        </div>
-                        <a href="<?php the_permalink()?>#comment-container" class="comment-count">
-                        <?php echo wheels_esi_include(get_template_directory_uri() . '/esi/comment-count.php?post_id='.$post->ID) ?>
-                        </a>
-                        <div class="overlay">&nbsp;</div>
-                    </div>
-                </div>
+?>
+<?php
+
+if(!empty($latestNews)):
+
+    ?>
+<div class="reviewCarouselContainer">
+    <div id="newsfeaturesCarousel" data-controller="CarouselController" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
 
                 <?php
-                $loop++;
-            endforeach;
-        endif;
-        ?>
+                $loop = 1;
+                $break_div = array(4,7);
+                foreach($latestNews as $post):
+                    switch($loop){
+                        case 1: case 4: case 7: $elm_class = 'prime tl'; break;
+                        case 2: case 5: case 8: $elm_class = 'tm'; break;
+                        case 3: case 6: case 9: $elm_class = 'tr'; break;
+                    }
+                    switch($loop){
+                        case 1: case 4: case 7: $image_size = 'slide-big'; break;
+                        default: $image_size = 'slide-medium'; break;
+                    }
+                    setup_postdata($post);
 
-    </div>
-    <a href="#guideCarousel" data-slide="prev" class="carousel-control left">&lsaquo;</a>
-    <a href="#guideCarousel" data-slide="next" class="carousel-control right">&rsaquo;</a>
-</div>
-<!-- end .carousel-->
+                    if(in_array($loop, $break_div)) echo '</div><div class="item ">';
 
-<!-- begin .carousel-->
-<div id="guideCarousel2" data-controller="CarouselController" class="carousel slide" style="display: none;">
-    <div class="carousel-inner">
+                    ?>
+                    <div class="feature-container <?php echo $elm_class?>">
+                        <?php the_post_thumbnail($image_size)?>
 
-        <?php
-        global $wpdb;
-
-        $args['type'] = 'popular';
-        $args['post_type'] = 'guides';
-        $args['limit'] = 3;
-
-        $postModel = new \Emicro\Model\Post($wpdb);
-        $latestGuides = $postModel->getAll($args);
-
-        $loop = 1;
-        if(!empty($latestGuides)):
-            foreach($latestGuides as $post):
-                setup_postdata($post)
-                ?>
-
-                <div class="item <?php if($loop == 1) echo 'active' ?>">
-                    <div class="feature-container"><?php the_post_thumbnail('driving-guide-medium')?>
                         <div class="copy">
-                            <div class="pos"><a href="<?php the_permalink()?>">
-                                <p><?php the_author()?></p>
-                                <h4><?php the_title()?> &raquo;</h4>
-                            </a></div>
+                            <div class="pos">
+                                <a href="<?php the_permalink()?>">
+                                    <h4><?php echo character_limiter( get_the_title(), 297)?>&nbsp;&raquo;</h4>
+                                    <span class="author"><?php the_author()?></span>
+                                </a>
+                            </div>
                         </div>
+
                         <a href="<?php the_permalink()?>#comment-container" class="comment-count">
                             <?php echo wheels_esi_include(get_template_directory_uri() . '/esi/comment-count.php?post_id='.$post->ID) ?>
                         </a>
-                        <div class="overlay">&nbsp;</div>
-                    </div>
-                </div>
+                        <div class="overlay" title="Popularity <?php echo get_post_meta($post->ID, 'wheels_post_popularity', true)?>">&nbsp;</div>
 
-                <?php
-                $loop++;
-            endforeach;
-        endif;
-        ?>
+                    </div>
+                    <?php
+
+                    $loop++;
+                endforeach?>
+
+            </div>
+        </div>
+
+        <a href="#newsfeaturesCarousel" data-slide="prev" class="carousel-control left">&lsaquo;</a>
+        <a href="#newsfeaturesCarousel" data-slide="next" class="carousel-control right">&rsaquo;</a>
 
     </div>
-    <a href="#guideCarousel2" data-slide="prev" class="carousel-control left">&lsaquo;</a>
-    <a href="#guideCarousel2" data-slide="next" class="carousel-control right">&rsaquo;</a>
 </div>
-<!-- end .carousel-->
+<?php endif; ?>

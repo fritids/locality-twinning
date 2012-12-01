@@ -68,7 +68,7 @@ $.fn.AskQuestionMessageController = function(){
 
             if( thisFormError.length > 0 ) return false;
 
-            $submitBtn.after('<img src="/wp-content/themes/wheels/img/ajax-loader.gif" width="20">');
+            $submitBtn.after('<img src="/wp-content/themes/localitytwinning/img/ajax-loader.gif" width="20">');
 
             $.ajax({
                 type: 'post',
@@ -124,7 +124,7 @@ jQuery(document).ready(function(){
 
         if( formValid.length > 0 ) return false;
 
-        $submitBtn.after('<img src="/wp-content/themes/wheels/img/ajax-loader.gif" width="20">');
+        $submitBtn.after('<img src="/wp-content/themes/localitytwinning/img/ajax-loader.gif" width="20">');
         var data = jQuery(this).serialize();
         jQuery.ajax({
             url:WHEELS_AC_AJAX_ACTION,

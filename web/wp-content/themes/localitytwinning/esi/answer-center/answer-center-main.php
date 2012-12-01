@@ -5,7 +5,7 @@ global $wpdb;
 $isUserLoggedIn = is_user_logged_in();
 
 $answerCenter = new \Emicro\Model\AnswerCenter($wpdb);
-$adModel = new \Emicro\Model\Ad($wpdb);
+
 
 $answerCenterCategories = $answerCenter->getCategories();
 
@@ -20,33 +20,24 @@ $answerCenterQuestions = $answerCenter->getQuestions($category_id);
     <a name="answer-centre"></a>
     <div class="answer-centre">
         <div class="header">
-            <h3>Answer Centre</h3>
+            <h3>সমাধান কেন্দ্র</h3>
             <ul class="pill-menu">
                 <?php foreach($answerCenterCategories as $key => $category): ?>
                 <li class="ac<?php if($category->id == $category_id) echo ' on"' ?>"><a href="/guides/?category=<?php echo $category->id ?>"><?php echo $category->name ?></a></li>
                 <?php endforeach; ?>
             </ul>
 
-            <?php if($isUserLoggedIn): ?>
             <a class="primary" data-controller="AnswerCentrePostQuestionController" href="#" id="post-comment-link">
-                Post a Question
+                প্রশ্ন করুন
             </a>
-            <?php else: ?>
-            <a class="primary" data-controller="ModalTriggerController" data-modal="#login-signup" href="#" id="post-comment-link">
-                Sign-in to post a question
-            </a>
-            <?php endif ?>
 
 
-
-            <?php if($isUserLoggedIn): ?>
             <div class="ask-question" data-destroy="false" data-controller="AskQuestionMessageController"
                  id="ask-question-message" style="display: none;">
                 <div class="pos">
-                    <h5>Ask a question:</h5>
+                    <h5>প্রশ্ন করুন:</h5>
 
-                    <p>Our editors will select the best questions to answer. You will be notified if your question is
-                        posted.</p>
+                    <p>আমাদের বিশেষজ্ঞ আপনাদের প্রশ্নর উত্তর দিবেন এবং আপনাকে অবহিত করা হবে।<</p>
 
                     <div class="form-container">
                         <form>
@@ -56,20 +47,21 @@ $answerCenterQuestions = $answerCenter->getQuestions($category_id);
                                         <label for="category_id">Question type</label>
 
                                         <div class="question-type-container">
-                                            <select data-role="none"
+                                            <!--<select data-role="none"
                                                     id="category_id"
                                                     name="category_id"
                                                     data-controller="ComboboxController"
                                                     data-readonly="true"
                                                     class="question-type-selector ui-dark">
-                                                <?php foreach($answerCenterCategories as $category) :?>
-                                                <option value="<?php echo $category->id ?>"><?php echo $category->name ?></option>
-                                                <?php endforeach; ?>
-                                            </select>
+                                                <?php /*foreach($answerCenterCategories as $category) :*/?>
+                                                <option value="<?php /*echo $category->id */?>"><?php /*echo $category->name */?></option>
+                                                <?php /*endforeach; */?>
+                                            </select>-->
+                                            <input name="category_id" value="1" type="hidden">
                                         </div>
                                     </li>
                                     <li>
-                                        <label for="question">Question</label>
+                                        <label for="question">প্রশ্ন</label>
                                         <textarea class="global-inner-shadow full" rows="3" name="question" data-role="none"
                                                   id="question"></textarea>
                                         <input type="hidden" name="question_form" value="yes" />
@@ -84,7 +76,7 @@ $answerCenterQuestions = $answerCenter->getQuestions($category_id);
                 </div>
                 <a class="close" href="#"></a>
             </div>
-            <?php endif; ?>
+
         </div>
 
         <ul class="acc-menu" data-controller="AccordionController2">
@@ -112,9 +104,9 @@ $answerCenterQuestions = $answerCenter->getQuestions($category_id);
                                     <?php
                                     if($question->answer == 1)
                                     {
-                                        echo 'View Answer';
+                                        echo 'উত্তর দেখুন';
                                     }elseif($question->answer > 1){
-                                        echo 'View Answers';
+                                        echo 'উত্তর দেখুন';
                                     }
                                     /*
                                     if($question->expert_uid != 0){
@@ -153,14 +145,14 @@ $answerCenterQuestions = $answerCenter->getQuestions($category_id);
                                                 <?php if(!empty($isExpert)){ ?>
 
                                                 <div class="comment-author vcard">
-                                                    <span class="fn"><?php echo $user->display_name ?>'s Answer</span>
+                                                    <span class="fn"><?php echo $user->display_name ?>'র উত্তর</span>
                                                 </div>
 
                                                 <?php }else{ ?>
 
                                                 <div class="comment-author vcard">
                                                     <span class="fn"><?php echo $user->display_name ?></span>
-                                                    <time datetime="<?php echo $answer->submitted ?>" pubdate="pubdate"><?php echo human_time_diff($answer->submitted, time())?> ago</time>
+                                                    <!--<time datetime="<?php /*echo $answer->submitted */?>" pubdate="pubdate"><?php /*echo human_time_diff($answer->submitted, time())*/?> ago</time>-->
                                                 </div>
 
                                                 <?php } ?>
@@ -181,29 +173,17 @@ $answerCenterQuestions = $answerCenter->getQuestions($category_id);
                                 <form method="post" class="answerform">
                                     <fieldset>
                                         <ol>
-                                            <?php if ($isUserLoggedIn){ ?>
                                             <li>
-                                                <label for="comment-<?php echo $question->id ?>">Have your say</label>
+                                                <label for="comment-<?php echo $question->id ?>">আপনার মাতামত দিন</label>
                                                 <textarea class="global-inner-shadow full" rows="4" name="answer" data-role="none"
                                                           id="comment-<?php echo $question->id ?>"></textarea>
                                                 <input type="hidden" name="question_id" value="<?php echo $question->id ?>" />
                                             </li>
                                             <li>
-                                                <input type="submit" class="formbtn green" value="Submit Answer" data-role="none">
+                                                <input type="submit" class="formbtn green" value="সাবমিট" data-role="none">
 
-                                                <p class="tip">
-                                                    <strong>Tip:</strong>&nbsp;Be positive and follow our
-                                                    <a href="/commenting-guidelines/">commenting guidelines</a>
-                                                </p>
                                             </li>
-                                            <?php }else{ ?>
-                                            <li>
-                                                <p class="tip">
-                                                    Please sign-in to post answer
-                                                    <a href="#" data-controller="ModalTriggerController" data-modal="#login-signup">Sign-in</a>
-                                                </p>
-                                            </li>
-                                            <?php } ?>
+
                                         </ol>
                                     </fieldset>
                                 </form>
@@ -212,11 +192,6 @@ $answerCenterQuestions = $answerCenter->getQuestions($category_id);
                         </div>
                     </div>
 
-                    <div class="sidebar">
-                        <div class="mrec-ad">
-                            <?php echo $adModel->getAd('300x250'); ?>
-                        </div>
-                    </div>
 
                 </div>
             </li>

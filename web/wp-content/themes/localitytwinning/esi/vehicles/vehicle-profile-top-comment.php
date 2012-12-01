@@ -30,7 +30,7 @@ if(!empty($comments)): $totalFound = count($comments);
 
 <div class="reader-reviews">
     <h3>Top Reader Comments</h3>
-    <a href="#" data-role="none" class="post-review">Post a comment</a>
+    <a href="#" data-role="none" class="post-review">আপনার মাতামত দিন</a>
 
     <?php foreach($comments as $comment): $rating = get_comment_meta($comment->comment_ID, 'comment_rating', true);?>
     <div class="reader-review clearfix ">
@@ -53,7 +53,7 @@ if(!empty($comments)): $totalFound = count($comments);
     </div>
     <?php endforeach;?>
 
-    <a href="#comment-container" class="primary reviews">See all comments</a>
+    <a href="#comment-container" class="primary reviews">সকল মন্তব্য দেখুন</a>
 </div>
 
 <?php endif ?>

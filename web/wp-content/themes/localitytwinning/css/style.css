@@ -396,7 +396,7 @@ div.vehicle-gallery div.gallery-nav div.viewport div.container div.slide .wrap a
 #main-header .navbar ul li.last{float:right;}#main-header .navbar ul li.last.dropdown a:after{background:none;}
 #main-header .navbar ul li.last a{padding:12px 0px 12px 11px;}#main-header .navbar ul li.last a:before{background:transparent url("../img/compare-icons.png") no-repeat 0px 0px;content:"";display:inline-block;height:15px;width:24px;margin:0 5px 0 0;position:relative;top:3px;}
 #main-header .navbar ul li.last a.hover:before,#main-header .navbar ul li.last a:hover:before{background:transparent url("../img/compare-icons.png") no-repeat 0px -15px;}
-#main-header .navbar ul li a{display:block;color:#FFF;font-family:"ProximaNovaCondensed",Helvetica,Arial,sans-serif;font-size:14px;font-weight:bold;line-height:24px;text-transform:uppercase;padding:12px 11px;}#main-header .navbar ul li a:hover,#main-header .navbar ul li a.hover{color:#e85c03;}
+#main-header .navbar ul li a{display:block;color:#FFF;font-family:"ProximaNovaCondensed",Helvetica,Arial,sans-serif;font-size:18px;font-weight:bold;line-height:24px;text-transform:uppercase;padding:12px 11px;}#main-header .navbar ul li a:hover,#main-header .navbar ul li a.hover{color:#e85c03;}
 #main-header .navbar ul.subnav{clear:both;display:block;zoom:1;}#main-header .navbar ul.subnav:before,#main-header .navbar ul.subnav:after{display:table;content:"";zoom:1;}
 #main-header .navbar ul.subnav:after{clear:both;}
 #main-header .navbar ul.subnav li{height:33px;}#main-header .navbar ul.subnav li.first a{padding:12px 11px 12px 0px;}

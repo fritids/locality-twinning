@@ -1,4 +1,5 @@
 <?php
+header ('Content-type: text/html; charset=utf-8');
 require_once('../../../wp-load.php');
 if($_REQUEST['hdn_lat']!=0 && $_REQUEST['hdn_lng']!=0){
     $address = $_REQUEST['dealer-location'];
@@ -34,7 +35,7 @@ if($_REQUEST['hdn_lat']!=0 && $_REQUEST['hdn_lng']!=0){
                 $permalink = $result->external_link;
             }
             $content = truncate(strip_tags($result->post_content), 110, true);
-            $str .= '{"post_id": '.$result->post_id.', "category_id": "'.$result->term_id.'", "title": "'.truncate(strip_tags($result->post_title), 40, true).'", "content": "'.base64_encode( $content ).'", "permalink": "'.$permalink.'", "post_date": "'.recentDateFormat($result->post_date).'", "longitude": '.$result->grid_lng.', "latitude": '.$result->grid_lat.', "color": "'.$result->color.'", "icon": "'.$result->icon.'", "h_icon": "'.$result->h_icon.'" },';
+            $str .= '{"post_id": '.$result->post_id.', "category_id": "'.$result->term_id.'", "title": "'.truncate(strip_tags($result->post_title), 40, true).'", "content": "'.strip_tags( $content ).'", "permalink": "'.$permalink.'", "post_date": "'.recentDateFormat($result->post_date).'", "longitude": '.$result->grid_lng.', "latitude": '.$result->grid_lat.', "color": "'.$result->color.'", "icon": "'.$result->icon.'", "h_icon": "'.$result->h_icon.'" },';
         }
         $json .= substr($str,0,strlen($str)-1);
     }

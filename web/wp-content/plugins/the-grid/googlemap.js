@@ -370,18 +370,6 @@ function HomeControl(controlDiv, map, home)
     //var signupImg = document.createElement('DIV');
     //signupImg.setAttribute("id", 'sig');
 
-
-    var adTag = '<a href="http://adserver.adtechus.com/adlink/3.0/5214.1/2637323/0/170/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group];rdclick=" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5214.1/2637323/0/170/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" border="0" width="256" height="219"></a>';
-	signupHolder.innerHTML = adTag;
-
-    var newScript = document.createElement('script');
-    newScript.type = 'text/javascript';
-    newScript.language = "javascript1.1";
-    newScript.src = 'http://adserver.adtechus.com/addyn/3.0/5214.1/2637323/0/170/ADTECH;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc='+new Date().getTime()+';rdclick=';
-    signupHolder.appendChild(newScript);
-
-	controlDiv.appendChild(signupHolder);
-
 	function showSidebar(){
 		gridFeedPanel.setAttribute('class', 'slider-open use-sidebar');
         setPanelCookie("grid_map_big_panel","true");
@@ -635,7 +623,7 @@ function attachInfo(marker, obj) {
     //custom infowindow
      var boxText = document.createElement("div");
         boxText.innerHTML = '<div class="post-info"><span class="title"><a href="'+ obj.permalink +'" target="_new" onclick="infoWindowRreadMoreClick('+ obj.post_id +')">'+ obj.title +'</a></span>' +
-            '<span class="excerpt">'+ $.base64.decode( obj.content ) +
+            '<span class="excerpt">'+  obj.content +
             '</span><span class="grid-read-more-info"><a href="'+ obj.permalink +'" target="_new" onclick="infoWindowRreadMoreClick('+ obj.post_id +')">'+
     'Read More</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="grid-map-tweet" href="http://twitter.com/intent/tweet?text=' + obj.title + ' '+encodeURIComponent( GRID_MAP_CURRENT_URL + 'gid=' + obj.post_id) +'"  target="_blank">Tweet</a></sapn></div>';
 
@@ -1428,7 +1416,7 @@ $(document).ready(function(){
 function feedPanelResize(){
     $("#map_canvas").height($(window).height()+'px');
     var window_height = $(window).height();
-    var signup_holder_height = 219;
+    var signup_holder_height = 0;
     var feed_holder_height = window_height - signup_holder_height;
     var feed_container_height = feed_holder_height - 30;
     var left_panel = window_height;

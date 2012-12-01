@@ -128,7 +128,8 @@ function wheels_register_post_type_vehicle_review()
         'has_archive' => true,
         'hierarchical' => false,
         'menu_position' => null,
-        'supports' => array('title','editor' ,'author', 'thumbnail', 'excerpt', 'comments')
+        'supports' => array('title','editor' ,'author', 'thumbnail', 'excerpt', 'comments'),
+        'taxonomies' => array('category')
     );
     register_post_type('reviews', $args);
 }

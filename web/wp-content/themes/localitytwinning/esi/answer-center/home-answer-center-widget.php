@@ -15,7 +15,7 @@ $answerCenterPopularQuestions = $answerCenter->getQuestions($category_id, 5, 'po
 
     <div class="header">
         <h3>সমাধান কেন্দ্র</h3>
-        <a href="/guides/#answer-centre">সকল প্রশ্ন</a>
+        <a href="/question-answer/#answer-centre">সকল প্রশ্ন</a>
         <a href="#" class="pull-right" data-controller="AnswerCentrePostQuestionController">
             প্রশ্ন করুন
         </a>
@@ -52,7 +52,7 @@ $answerCenterPopularQuestions = $answerCenter->getQuestions($category_id, 5, 'po
                         <div class="main">
                             <div class="quote">
                                 <div class="pos">
-                                    <a href="/guides/?category=<?php echo $question->category_id ?>#answer-centre/<?php echo $question->id ?>">
+                                    <a href="/question-answer/?category=<?php echo $question->category_id ?>#answer-centre/<?php echo $question->id ?>">
                                         <?php echo stripslashes($question->question) ?>
                                         </br></br>
                                     <span class="home-view-answer">উত্তর দেখুন</span>
@@ -90,7 +90,7 @@ $answerCenterPopularQuestions = $answerCenter->getQuestions($category_id, 5, 'po
                             <div class="main">
                                 <div class="quote">
                                     <div class="pos">
-                                        <a href="/guides/?category=<?php echo $question->category_id ?>#answer-centre/<?php echo $question->id ?>">
+                                        <a href="/question-answer/?category=<?php echo $question->category_id ?>#answer-centre/<?php echo $question->id ?>">
                                             <?php echo stripslashes($question->question) ?>
                                             </br></br>
                                         <span class="home-view-answer">উত্তর দেখুন</span>
@@ -113,8 +113,7 @@ $answerCenterPopularQuestions = $answerCenter->getQuestions($category_id, 5, 'po
         <div class="pos">
             <h5>প্রশ্ন করুন:</h5>
 
-            <p>Our editors will select the best questions to answer. You will be notified if your
-                question is posted.</p>
+            <p>আমাদের বিশেষজ্ঞ আপনাদের প্রশ্নর উত্তর দিবেন এবং আপনাকে অবহিত করা হবে।</p>
 
             <div class="form-container">
                 <form>
@@ -123,21 +122,23 @@ $answerCenterPopularQuestions = $answerCenter->getQuestions($category_id, 5, 'po
                             <li>
                                 <label for="question-type">প্রশ্ন ধরন</label><!-- begin .question-type-container-->
                                 <div class="question-type-container">
-<!--
-                                    <select data-role="none"
+
+                                    <!--<select data-role="none"
                                             name="category_id"
                                             data-controller="ComboboxController"
                                             data-readonly="true"
                                             class="question-type-selector ui-dark"
                                             id="question-type">
-                                        <option value="">স্যানিটেশন</option>
-                                        <option value="">অন্যান্য</option>
+                                        <?php /*foreach($answerCenterCategories as $key => $category): */?>
+                                        <option value="<?php /*echo $category->id */?>"><?php /*echo $category->name */?></option>
+                                        <?php /*endforeach; */?>
                                     </select>-->
+                                    <input name="category_id" value="1" type="hidden">
                                 </div>
                                 <!-- end .question-type-container-->
                             </li>
                             <li>
-                                <label for="question">Question</label>
+                                <label for="question">প্রশ্ন</label>
                                 <textarea id="question"
                                           data-role="none"
                                           name="question"
@@ -170,6 +171,6 @@ $answerCenterPopularQuestions = $answerCenter->getQuestions($category_id, 5, 'po
     </div>
     <!-- end #alert.modal-->
 
-    <div style="height: 200px;"></div>
+    <div style="height: 250px;"></div>
 
 </div>

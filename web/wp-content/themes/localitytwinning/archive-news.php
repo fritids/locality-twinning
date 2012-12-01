@@ -18,7 +18,7 @@ get_header('meta');
     <div id="news-features" class="section-container clearfix">
 
         <div class="row">
-            <h2 class="title">News</h2>
+            <h2 class="title">বার্তা</h2>
         </div>
 
         <div class="row">

@@ -7,7 +7,7 @@ if (empty($_COOKIE)) {
     $isUserLoggedIn = is_user_logged_in();
 }
 
-if ( !$isUserLoggedIn ) exit(json_encode(array('status'=> 'fail', 'message' => 'Access denied')));
+//if ( !$isUserLoggedIn ) exit(json_encode(array('status'=> 'fail', 'message' => 'Access denied')));
 
 global $wpdb;
 

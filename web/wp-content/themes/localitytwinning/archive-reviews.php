@@ -21,9 +21,6 @@ $postModel = new \Emicro\Model\Post($wpdb);
 
             <li<?php if ($_GET['type'] != 'popular') echo ' class="on"'?>><a
                 href="<?php echo site_url('reviews')?>">সর্বশেষ</a></li>
-            <li<?php if ($_GET['type'] == 'popular') echo ' class="on"'?>><a
-                href="<?php echo site_url('reviews/?type=popular')?>">লোকপ্রিয়</a></li>
-
         </ul>
 
     </div>

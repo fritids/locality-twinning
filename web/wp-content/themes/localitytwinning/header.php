@@ -69,13 +69,17 @@ $submenu = new \Emicro\Model\Submenu($wpdb);
                     <a href="<?php echo site_url(); ?>/reviews/">সফল প্রকল্প সমূহ</a>
                 </li>
 
+                <li id="vehicles-reviews-menu-item2" data-window="bg-navprimary-menu-1" class="vehicles-reviews">
+                    <a href="<?php echo site_url(); ?>/মানচিত্রে-স্যানিটেশন/">মানচিত্রে স্যানিটেশন</a>
+                </li>
+
                 <li id="guides-menu-item" data-window="bg-navprimary-menu-2" class="guides">
                     <a href="<?php echo site_url(); ?>/guides/">গাইড</a>
                 </li>
 
-                <!--<li id="videos-menu-item" data-window="bg-navprimary-menu-3" class="videos dropdown">
-                    <a href="#">Videos</a>
-                </li>-->
+                <li id="videos-menu-item" data-window="bg-navprimary-menu-3" class="videos">
+                    <a href="/question-answer/">সমাধান কেন্দ্র</a>
+                </li>
 
             </ul>
 

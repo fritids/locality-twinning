@@ -1,5 +1,5 @@
 <?php global $adModel; get_header('meta') ?>
-<body class="page guides">
+<body class="page news-features">
 
 <!-- begin #container-->
 <div id="container" data-role="page">
@@ -7,9 +7,17 @@
     <!-- begin #topads-->
     <?php get_header() ?>
 
-    <div id="guides" class="section-container clearfix">
+    <div id="news-features" class="section-container clearfix">
 
-        <?php echo wheels_esi_include(get_template_directory_uri().'/esi/answer-center/answer-center-main.php?category='.$_GET['category']) ?>
+        <div class="row">
+            <h2 class="title">গাইড            </h2>
+
+        </div>
+
+        <div class="row">
+            <?php echo wheels_esi_include(get_template_directory_uri() . '/esi/guides/archive-guides-carousel.php') ?>
+
+        </div>
 
     </div>
 
