@@ -61,7 +61,7 @@ $submenu = new \Emicro\Model\Submenu($wpdb);
                     <a href="<?php echo site_url(); ?>">প্রথম পাতা</a>
                 </li>
 
-                <li id="news-features-menu-item" data-window="bg-navprimary-menu-0" class="news-features dropdown">
+                <li id="news-features-menu-item" data-window="bg-navprimary-menu-0" class="news-features">
                     <a href="<?php echo site_url(); ?>/news/">বার্তা</a>
                 </li>
 
