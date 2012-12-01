@@ -8,7 +8,7 @@
     if (!empty($readersThoughts)): $totalFound = count($readersThoughts);
         ?>
     <div class="row"><!-- begin .readers-thoughts-->
-        <div class="readers-thoughts"><h3>Reader's Thoughts</h3>
+        <div class="readers-thoughts"><h3>পাঠক মতামত</h3>
             <ul class="listing">
 
                 <?php foreach ($readersThoughts as $key => $post): setup_postdata($post) ?>
@@ -26,7 +26,7 @@
                         <div class="comment">
                             <div class="nub">&nbsp;</div>
                             <div class="thought">
-                                <span class="name"><?php echo $post->comment_author?> says&hellip;</span>
+                                <span class="name"><?php echo $post->comment_author?> বলেছেন&hellip;</span>
 
                                 <p><?php echo character_limiter(strip_tags($post->comment_content), 100, '&hellip;') ?></p>
                             </div>

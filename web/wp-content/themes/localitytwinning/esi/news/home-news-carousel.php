@@ -7,14 +7,14 @@ global $wpdb;
 $postModel = new \Emicro\Model\Post($wpdb);
 
 $latestNews  = $postModel->getAll(array('post_type' => 'news', 'limit' => 21));
-$popularNews = $postModel->getAll(array('post_type' => 'news', 'limit' => 21, 'type' => 'popular'));
+//$popularNews = $postModel->getAll(array('post_type' => 'news', 'limit' => 21, 'type' => 'popular'));
 
 ?>
 
 <div class="home-carousel">
     <ul id="home-reviews-pill-menu" class="pill-menu">
-        <li class="on ac"><a href="#">Latest</a></li>
-        <li class="ac"><a href="#">Popular</a></li>
+        <!--<li class="on ac"><a href="#">Latest</a></li>-->
+        <!--<li class="ac"><a href="#">Popular</a></li>-->
     </ul>
     <!-- begin .carousel-->
     <div class="home-reviews-container-latest">

@@ -256,6 +256,7 @@ function wheels_add_avatar_class($str = '')
  */
 function wheels_breadcrumb($echo = true)
 {
+    return '';
     global $post;
 
     $taxonomy  = get_query_var('taxonomy');

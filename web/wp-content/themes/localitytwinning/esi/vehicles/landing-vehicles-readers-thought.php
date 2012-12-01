@@ -30,7 +30,7 @@ if(!empty($readersThoughts)): $totalFound = count($readersThoughts);
                     </a>
                     <div class="comment">
                         <div class="nub">&nbsp;</div>
-                        <div class="thought"><span class="name"><?php echo $post->comment_author?> says&hellip;</span>
+                        <div class="thought"><span class="name"><?php echo $post->comment_author?> বলেছেন&hellip;</span>
                             <p><?php echo character_limiter(strip_tags($post->comment_content), 100,'&hellip;') ?></p>
                         </div>
                     </div>

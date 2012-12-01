@@ -318,15 +318,15 @@ if(isset($post) && $post->ID) {
     $popularity = $popularityPlugin->update($post_id);
 }
 
-\Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/themes/wheels/js/libs/jquery.easing.1.3.js");
-\Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/themes/wheels/js/vehicle-finder.js");
-\Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/themes/wheels/js/script.js");
+\Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/themes/localitytwinning/js/libs/jquery.easing.1.3.js");
+\Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/themes/localitytwinning/js/vehicle-finder.js");
+\Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/themes/localitytwinning/js/script.js");
 \Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/plugins/wheels-my-wheels/rajax.js");
-\Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/themes/wheels/js/reviews.js");
-\Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/themes/wheels/js/home.js");
-\Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/themes/wheels/js/wheels.js");
-\Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/themes/wheels/js/vehicles.js");
-\Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/themes/wheels/js/event-tracking.js");
+\Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/themes/localitytwinning/js/reviews.js");
+\Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/themes/localitytwinning/js/home.js");
+\Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/themes/localitytwinning/js/wheels.js");
+\Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/themes/localitytwinning/js/vehicles.js");
+\Emicro\Plugin\Assets::js(WP_CONTENT_URL . "/themes/localitytwinning/js/event-tracking.js");
 
 \Emicro\Plugin\Assets::includeScripts();
 

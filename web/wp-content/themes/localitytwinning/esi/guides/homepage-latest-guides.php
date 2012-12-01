@@ -13,8 +13,8 @@ $guides      = $postModel->getAll(array('post_type' => 'guides', 'limit' => 12))
     <div data-controller="SlidesController" data-nthchild="4" class="guides home-module">
 
         <div class="header">
-            <h3>Guides</h3>
-            <a href="/guides">All Guides</a>
+            <h3>গাইড</h3>
+            <a href="/guides">সকল গাইড</a>
         </div>
 
         <div class="viewport" style="overflow: hidden;">
@@ -39,8 +39,8 @@ $guides      = $postModel->getAll(array('post_type' => 'guides', 'limit' => 12))
             </div>
         </div>
         <div class="navigation">
-            <a href="#" class="nav left">Left</a>
-            <a href="#" class="nav right">Right</a>
+            <a href="#" class="nav left">বাম</a>
+            <a href="#" class="nav right">ডান</a>
         </div>
     </div>
     <!-- end .guides-->

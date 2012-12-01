@@ -15,31 +15,23 @@ $postModel = new \Emicro\Model\Post($wpdb);
     <?php wheels_breadcrumb() ?>
 
     <div class="row">
-        <h2 class="title">Reviews</h2>
+        <h2 class="title">সফল প্রকল্প সমূহ</h2>
 
         <ul class="order-by-list">
 
             <li<?php if ($_GET['type'] != 'popular') echo ' class="on"'?>><a
-                href="<?php echo site_url('reviews')?>">Latest</a></li>
+                href="<?php echo site_url('reviews')?>">সর্বশেষ</a></li>
             <li<?php if ($_GET['type'] == 'popular') echo ' class="on"'?>><a
-                href="<?php echo site_url('reviews/?type=popular')?>">Popular</a></li>
+                href="<?php echo site_url('reviews/?type=popular')?>">লোকপ্রিয়</a></li>
 
         </ul>
 
-        <!-- begin .tip-->
-        <div class="tip">
-            <strong>Tip:&nbsp;</strong>
-            Click <img src="<?php echo get_template_directory_uri() ?>/img/compare-icon-tip.png" alt="compare icon"/>to compare
-        </div>
-        <!-- end .tip-->
     </div>
 
 
     <?php echo wheels_esi_include(get_template_directory_uri() . '/esi/reviews/archive-reviews-carousel.php' )?>
 
     <?php echo wheels_esi_include(get_template_directory_uri() . '/esi/reviews/landing-readers-though.php')?>
-
-    <?php echo wheels_esi_include(get_template_directory_uri() . '/esi/reviews/archive_reviews_review_video.php')?>
 
 </div>
 <?php get_footer()?>
