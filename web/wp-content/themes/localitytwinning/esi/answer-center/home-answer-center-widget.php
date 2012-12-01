@@ -123,7 +123,7 @@ $answerCenterPopularQuestions = $answerCenter->getQuestions($category_id, 5, 'po
                             <li>
                                 <label for="question-type">প্রশ্ন ধরন</label><!-- begin .question-type-container-->
                                 <div class="question-type-container">
-
+<!--
                                     <select data-role="none"
                                             name="category_id"
                                             data-controller="ComboboxController"
@@ -132,7 +132,7 @@ $answerCenterPopularQuestions = $answerCenter->getQuestions($category_id, 5, 'po
                                             id="question-type">
                                         <option value="">স্যানিটেশন</option>
                                         <option value="">অন্যান্য</option>
-                                    </select>
+                                    </select>-->
                                 </div>
                                 <!-- end .question-type-container-->
                             </li>

@@ -42,7 +42,7 @@ class wheels_expert_widget extends WP_Widget
         <p>
 
         <div class="our-experts">
-            <h3>Our Experts</h3>
+            <h3>স্যানিটেশন বিশেষজ্</h3>
             <?php
             if(count($authorsResult))
             {
@@ -64,7 +64,7 @@ class wheels_expert_widget extends WP_Widget
 
                                 <span><?php echo $userdata->display_name; ?></span>
                             </a>
-                            <img class="nub" alt="" src="/wp-content/themes/wheels/img/dialog-nub-author.png">
+                            <img class="nub" alt="" src="<?php echo get_template_directory_uri() ;?>/img/dialog-nub-author.png">
                         </li>
                     <?php
                     }//end foreach
